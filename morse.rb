@@ -44,10 +44,20 @@ def returnChar (char)
   return ''
 end
 
+def decodeString (string)
+  if(string == nil) 
+    return ''
+  end
+  decoded = ''
+  strSplit = string.split(" ")
+  strSplit.each {|char| decoded += returnChar(char)}
+  return decoded
+end
+
 puts returnChar('....-')
+puts decodeString('-- -.--')
 
 # puts morse["A"] 
 # Get value by key.
 # puts morse.key('.-') 
 # Get key out of value.
-
