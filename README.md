@@ -23,12 +23,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Project Name] <a name="about-project"></a>
+# 📖 Decode a Morse Message <a name="about-project"></a>
 
 
 
 
-**[Projec Name]** is a simple react application that lets you use a calculator online.
+**Decode a Morse Message** is a Ruby script that lets you input a message in morse code and will return the translation.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -38,21 +38,7 @@
 <details>
   <summary>Functionality</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Front End</summary>
-  <ul>
-    <li><a href="https://reactjs.org/docs/getting-started.html">React</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Styling</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://www.ruby-lang.org/en/documentation/">Ruby</a></li>
   </ul>
 </details>
 
@@ -60,21 +46,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Single page app**
-- **Compact**
 - **Simple to use**
+- **Can decode single character or a word or a line**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- Check the live demo [here]()
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -86,7 +62,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-NodeJs
+- Ruby
 
 ### Setup
 
@@ -94,48 +70,16 @@ Clone this repository to your desired folder:
 
 
 ```cd my-folder   
-    git clone git@github.com:Vgonma/math-magician.git
-    cd leaderboard
+    git clone git@github.com:Vgonma/morse_code.git
+    cd morse_code
 ```
-Install dependencies:
-```
-    npm i
-```
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### Usage
 
-To run the project open the html file in your web browser.
-
-### Deployment
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+To run the project use the following commands:
+```
+ruby morse.rb
+```
 
 <!-- AUTHORS -->
 
@@ -147,15 +91,19 @@ To run the project open the html file in your web browser.
 - Twitter: [@Victor_GonMa](https://twitter.com/Victor_GonMa)
 - LinkedIn: [Victor Manuel Gonzalez Massimi](https://www.linkedin.com/in/victor-gonzalez-massimi/)
 
+👤 **Shahadat Hossain**
+
+- GitHub: [@shahadat3669](https://github.com/shahadat3669)
+- Twitter: [@shahadat3669](https://twitter.com/shahadat3669)
+- LinkedIn: [shahadat3669](https://www.linkedin.com/in/shahadat3669)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Feature 1**
-- [ ] **Feature 2**
-- [ ] **Feature 3**
+- [ ] **Decode a file**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
