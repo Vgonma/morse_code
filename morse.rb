@@ -1,4 +1,4 @@
-morse = {
+$morse = {
   'A'=> '.-',
   'B'=> '-...',
   'C'=> '-.-.',
@@ -37,7 +37,17 @@ morse = {
   '0'=> '-----'
 }
 
-puts morse["A"] 
+def returnChar (char)
+  if(char)
+    return $morse.key(char)
+  end
+  return ''
+end
+
+puts returnChar('....-')
+
+# puts morse["A"] 
 # Get value by key.
-puts morse.key('.-') 
+# puts morse.key('.-') 
 # Get key out of value.
+
