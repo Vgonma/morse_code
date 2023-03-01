@@ -54,8 +54,23 @@ def decodeString (string)
   return decoded
 end
 
+def decodeLine (string)
+  if(string)
+    temp = ''
+    strSplit = string.split("   ")
+    strSplit.each do |word|
+      temp += decodeString(word)
+      temp += " "
+    end
+    return temp
+  end
+  return ''
+
+end
+
 puts returnChar('....-')
 puts decodeString('-- -.--')
+puts decodeLine('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
 # puts morse["A"] 
 # Get value by key.
