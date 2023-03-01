@@ -68,11 +68,17 @@ def decodeLine (string)
 
 end
 
-puts returnChar('....-')
-puts decodeString('-- -.--')
-puts decodeLine('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# puts returnChar('....-')
+# puts decodeString('-- -.--')
+# puts decodeLine('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 
 # puts morse["A"] 
 # Get value by key.
 # puts morse.key('.-') 
 # Get key out of value.
+
+puts "Enter your message in Morse code:"
+
+line = gets.chomp
+
+puts decodeLine(line)
