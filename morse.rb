@@ -1,4 +1,4 @@
-$morse = {
+MORSE = {
   'A'=> '.-',
   'B'=> '-...',
   'C'=> '-.-.',
@@ -35,37 +35,34 @@ $morse = {
   '8'=> '---..',
   '9'=> '----.',
   '0'=> '-----'
-}
+}.freeze
 
-def returnChar (char)
-  if(char)
-    return $morse.key(char)
-  end
-  return ''
+def return_char(char)
+  return MORSE.key(char) if char
+
+  ''
 end
 
-def decodeString (string)
-  if(string == nil) 
-    return ''
-  end
+def decode_string(string)
+  return '' if string.nil?
+
   decoded = ''
-  strSplit = string.split(" ")
-  strSplit.each {|char| decoded += returnChar(char)}
-  return decoded
+  str_split = string.split
+  str_split.each { |char| decoded += return_char(char) }
+  decoded
 end
 
-def decodeLine (string)
-  if(string)
+def decode_line(string)
+  if string
     temp = ''
-    strSplit = string.split("   ")
-    strSplit.each do |word|
-      temp += decodeString(word)
-      temp += " "
+    str_split = string.split('   ')
+    str_split.each do |word|
+      temp += decode_string(word)
+      temp += ' '
     end
     return temp
   end
-  return ''
-
+  ''
 end
 
 # puts returnChar('....-')
@@ -81,4 +78,4 @@ puts "Enter your message in Morse code:"
 
 line = gets.chomp
 
-puts decodeLine(line)
+puts decode_line(line)
